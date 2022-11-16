@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    background-image: linear-gradient(270deg, #5596ba, #943e8a, #30ae9e);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 44s ease infinite;
+    -moz-animation: AnimationName 44s ease infinite;
+    animation: AnimationName 44s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.main { 
+    height: 1150px;
+    width: 800px;
+    background-color: white;
+    margin: 20px auto;
+}
+.photo {
+    width: 150px;
+    border-radius: 50%;
+}
+.profile {
+    background-color: #262626;
+    text-align: center;
+    padding: 20px;
+}
+.fullname {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.name {
+    font-weight: bold;
+    color: #16c8ce;
+}
+.title {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.content_box {
+    padding-left: 20px;
+}
+
+h2 {
+    text-transform: uppercase; 
+    font-weight: 700;
+    color: #377090;
+}
+
+.left_pannel {
+    width: 35%;
+    float: left;
+}
+.right_pannel {
+    width: 62%;
+    float: left;
+}
+.line {
+    border-left: 1px solid black;
+    height: 800px;
+    width: 2%;
+    margin-top: 30px;
+    float:left;
+}
+li {
+    color: #474747;
+    padding: 5px;
+    margin-left: -5px;
+}
+
+ul {
+    margin-left: -20px;
+}
+.bar {
+    background: black;
+    margin-left: -20px;
+    margin-right: 25px;
+    margin-top: 10px;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, #c53f86, #3fbfc5)
+}
+.mix {
+    width: 85%;
+    animation: mix 3s;
+}
+.take {
+    width: 75%;
+    animation: take 3s;
+}
+.edit {
+    width: 65%;
+    animation: edit 3s;
+}
+@keyframes mix {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@keyframes take {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes edit {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
